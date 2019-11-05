@@ -1,0 +1,25 @@
+@import "variables";
+@import "mixins";
+
+/* ==== GRID START ==== */
+@import "grid";
+@import "flex";
+/* ==== GRID END ==== */
+
+/* ==== RESET START ==== */
+@import "reset";
+/* ==== RESET END ==== */
+
+/* ==== DEFAULT CLASSES START ==== */
+@import "def-classes";
+/* ==== DEFAULT CLASSES END ==== */
+
+/* ==== DEFAULT COMPONENTS START ==== */
+@import "def-component";
+/* ==== DEFAULT COMPONENTS END ==== */
+
+/* ==== CUSTOM STYLES START  ==== */
+@import "inner";
+@import "header";
+@import "about-us";
+/* ==== CUSTOM STYLES END ==== */

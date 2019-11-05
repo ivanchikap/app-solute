@@ -1,0 +1,61 @@
+.inner {
+  height: 100vh;
+  min-height: 800px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  &__text {
+    letter-spacing: 0.5px;
+  }
+
+  &__title {
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 1.55;
+  }
+
+  &__text {
+    font-size: 20px;
+  }
+
+  &__subtitle {
+    line-height: 1.55;
+    margin-top: 8px;
+    margin-bottom: 41px;
+  }
+
+  &__store-link {
+    padding: 15px 30px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    transition: all .2s ease-out;
+
+    &:hover {
+      background-color: #af5aff;
+      background-image: linear-gradient(to right, rgba(166, 85, 242, 0.87) 0%, rgba(166, 85, 242, 0.87) 20%, rgba(255, 85, 82, 0.87) 81%, rgba(255, 85, 82, 0.87) 100%);
+      border: 2px solid transparent;
+      box-shadow: 3px 3px 0 rgba(131, 0, 255, 0.18);
+      background-clip: padding-box;
+    }
+
+    & + & {
+      margin-left: 24px;
+    }
+
+    .fab {
+      font-size: 34px;
+      margin-right: 15px;
+    }
+  }
+
+  &__store-link-text {
+    letter-spacing: 0.4px;
+  }
+
+  &__store-link-name {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+  }
+}

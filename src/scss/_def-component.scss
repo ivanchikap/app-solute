@@ -1,0 +1,32 @@
+.default-section {
+  padding: 125px 0;
+}
+
+.title {
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+}
+
+.title > * {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.decoration {
+  font-size: 18px;
+  letter-spacing: 0.36px;
+  margin: 21px 0;
+
+  &::before, &::after {
+    content: "---------------";
+  }
+
+  &__circle {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 0 15px;
+    vertical-align: middle;
+  }
+}

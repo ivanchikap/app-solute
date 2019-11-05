@@ -1,0 +1,20 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  padding-top: 28px;
+
+  &__link {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px;
+
+    &:hover {
+      color: #f55769;
+      background-color: #fff;
+    }
+  }
+}
