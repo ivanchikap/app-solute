@@ -41,6 +41,7 @@
   box-shadow: 3px 3px 0 rgba(131, 0, 255, 0.18);
   border-radius: 10px;
   display: inline-block;
+  line-height: 90px;
 }
 
 .feature-text {
@@ -59,5 +60,52 @@
     line-height: 26px;
     max-height: 52px;
     overflow: hidden;
+  }
+}
+
+.customize-icon,
+.support-icon,
+.response-icon,
+.design-icon,
+.document-icon,
+.features-icon,
+.colors-scheme-icon {
+  display: inline-block;
+  background: url('../img/sprite.png') no-repeat;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: left;
+}
+
+.customize-icon { background-position: -2px -0px; width: 40px; height: 39px; }
+.support-icon { background-position: -2px -41px; width: 39px; height: 39px; }
+.response-icon { background-position: -2px -82px; width: 38px; height: 33px; }
+.design-icon { background-position: -2px -117px; width: 36px; height: 40px; }
+.document-icon { background-position: -2px -159px; width: 36px; height: 30px; }
+.features-icon { background-position: -2px -191px; width: 35px; height: 35px; }
+.colors-scheme-icon { background-position: -2px -228px; width: 33px; height: 33px; }
+
+
+.btn {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  text-transform: uppercase;
+  padding: 12px 23px;
+  font-size: 14px;
+  transition: all .3s ease-out;
+
+  &--default {
+    color: #af5aff;
+    border-color: #b0b0b0;
+
+    &:hover {
+      background-color: #af5aff;
+      background-image: linear-gradient(to right, rgba(166, 85, 242, 0.87) 0%, rgba(166, 85, 242, 0.87) 20%, rgba(255, 85, 82, 0.87) 81%, rgba(255, 85, 82, 0.87) 100%);
+      border-color: transparent;
+      box-shadow: 3px 3px 0 rgba(131, 0, 255, 0.18);
+      background-clip: padding-box;
+      color: #fff;
+    }
   }
 }

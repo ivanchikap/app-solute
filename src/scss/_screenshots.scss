@@ -1,0 +1,16 @@
+.screenshots {
+  &__carousel-wrapper {
+    position: relative;
+  }
+
+  &__carousel-bg {
+    position: absolute;
+    background: url("../img/device-img.png") no-repeat;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+    width: 279px;
+    height: 589px;
+  }
+}

@@ -32,6 +32,9 @@
 .bg-black {
   background-color: #000;
 }
+.bg-white {
+  background-color: #fff;
+}
 .gradient-violet {
   background-color: #af5aff;
   background-image: linear-gradient(to right, rgba(166, 85, 242, 0.87) 0%, rgba(166, 85, 242, 0.87) 20%, rgba(255, 85, 82, 0.87) 81%, rgba(255, 85, 82, 0.87) 100%);
@@ -41,6 +44,9 @@
 }
 .shadows-violet {
   box-shadow: 10px 0 0 #af5aff, -10px 0 0 #af5aff;
+}
+.shadows-white {
+  box-shadow: 10px 0 0 #fff, -10px 0 0 #fff;
 }
 .text-white {
   color: #fff;

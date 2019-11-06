@@ -1,0 +1,47 @@
+.pricing {
+  &__item {
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.13);
+    border-radius: 10px;
+    background-color: #fff;
+    padding-bottom: 40px;
+  }
+
+  &__item-name,
+  &__item-price,
+  &__item-list {
+    padding: 40px;
+  }
+
+  &__item-name {
+    color: #af5aff;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+
+  &__item-price {
+    border-radius: 10px;
+    line-height: 1;
+  }
+
+  &__item-price-currency {
+    vertical-align: top;
+    font-size: 24px;
+  }
+
+  &__item-price-value {
+    font-size: 48px;
+    line-height: 38px;
+  }
+
+  &__item-price-during {
+    font-size: 20px;
+  }
+
+  &__item-list-item {
+    & + & {
+      margin-top: 25px;
+    }
+  }
+}
