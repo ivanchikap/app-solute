@@ -5,6 +5,33 @@ $('.screenshots__carousel').slick({
     arrows: false,
     responsive: [
         {
+            breakpoint: 1199,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '0px',
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 870,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '0px',
+                slidesToShow: 1
+            }
+        }
+    ]
+});
+
+$('.testimonial__carousel').slick({
+    centerMode: true,
+    centerPadding: '20px',
+    slidesToShow: 1,
+    arrows: true,
+    responsive: [
+        {
             breakpoint: 768,
             settings: {
                 arrows: false,
@@ -23,4 +50,12 @@ $('.screenshots__carousel').slick({
             }
         }
     ]
+});
+
+//slicknav init
+$('.header__nav').slicknav({
+    label: '',
+    duration: 1000,
+    easingOpen: "easeOutBounce",
+    appendTo: '.header .container'
 });

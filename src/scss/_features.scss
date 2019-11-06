@@ -2,6 +2,10 @@
   &__item {
     & + & {
       margin-top: 90px;
+
+      @include mobile-large {
+        margin-top: 40px;
+      }
     }
   }
 }

@@ -99,7 +99,3 @@ option, option:hover {
 ::-moz-placeholder          {transition: all .3s linear;   color: rgba(255, 255, 255, .8);}
 :-moz-placeholder           {transition: all .3s linear;   color: rgba(255, 255, 255, .8);}
 :-ms-input-placeholder      {transition: all .3s linear;   color: rgba(255, 255, 255, .8);}
-:focus::-webkit-input-placeholder {color: transparent}
-:focus::-moz-placeholder          {color: transparent}
-:focus:-moz-placeholder           {color: transparent}
-:focus:-ms-input-placeholder      {color: transparent}

@@ -5,6 +5,12 @@
   z-index: 99;
   padding-top: 28px;
 
+  &__nav {
+    @include laptop {
+      display: none;
+    }
+  }
+
   &__link {
     font-size: 14px;
     font-weight: 700;

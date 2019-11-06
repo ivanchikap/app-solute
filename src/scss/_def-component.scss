@@ -1,5 +1,17 @@
 .default-section {
   padding: 125px 0;
+  @include laptop {
+    padding: 110px 0;
+  }
+  @include tablet {
+    padding: 90px 0;
+  }
+  @include mobile-large {
+    padding: 80px 0;
+  }
+  @include mobile {
+    padding: 60px 0;
+  }
 }
 
 .title {
@@ -42,6 +54,14 @@
   border-radius: 10px;
   display: inline-block;
   line-height: 90px;
+
+  &--small {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    line-height: 30px;
+    min-width: 30px;
+  }
 }
 
 .feature-text {
@@ -58,7 +78,7 @@
   &__text {
     font-size: 16px;
     line-height: 26px;
-    max-height: 52px;
+    max-height: 104px;
     overflow: hidden;
   }
 }
@@ -108,4 +128,39 @@
       color: #fff;
     }
   }
+  &--gradient {
+    background-color: #af5aff;
+    background-image: linear-gradient(to right, rgba(166, 85, 242, 0.87) 0%, rgba(166, 85, 242, 0.87) 20%, rgba(255, 85, 82, 0.87) 81%, rgba(255, 85, 82, 0.87) 100%);
+    border-color: transparent;
+    box-shadow: 3px 3px 0 rgba(131, 0, 255, 0.18);
+    background-clip: padding-box;
+    color: #fff;
+
+    &:hover {
+      background-image: none;
+      color: #af5aff;
+      background-color: transparent;
+      border-color: #b0b0b0;
+    }
+  }
+}
+
+
+.form-control {
+  width: 100%;
+  border-bottom: 1px solid #b0b0b0;
+  color: #8f8f8f;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  padding: 10px 0;
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+
+  &:focus {
+    border-color: #af5aff;
+  }
+  &::-webkit-input-placeholder {color:#8f8f8f;}
+  &::-moz-placeholder          {color:#8f8f8f;}/* Firefox 19+ */
+  &:-moz-placeholder           {color:#8f8f8f;}/* Firefox 18- */
+  &:-ms-input-placeholder      {color:#8f8f8f;}
 }

@@ -12,16 +12,29 @@
     font-size: 55px;
     font-weight: 500;
     line-height: 1.55;
+
+    @include mobile-large {
+      font-size: 45px;
+    }
   }
 
   &__text {
     font-size: 20px;
+
+    @include mobile-large {
+      font-size: 18px;
+    }
   }
 
   &__subtitle {
     line-height: 1.55;
     margin-top: 8px;
     margin-bottom: 41px;
+
+    @include mobile-large {
+      margin-top: 18px;
+      margin-bottom: 120px;
+    }
   }
 
   &__store-link {
@@ -29,6 +42,14 @@
     border: 2px solid #fff;
     border-radius: 10px;
     transition: all .2s ease-out;
+
+    @include mobile-large {
+      width: 320px;
+    }
+    @include mobile {
+      width: 100%;
+      padding: 15px 26px;
+    }
 
     &:hover {
       background-color: #af5aff;
@@ -40,6 +61,10 @@
 
     & + & {
       margin-left: 24px;
+
+      @include mobile-large {
+        margin-left: 0;
+      }
     }
 
     .fab {

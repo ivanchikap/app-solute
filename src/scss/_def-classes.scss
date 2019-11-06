@@ -17,6 +17,7 @@
 .text-center {
   text-align: center;
 }
+
 .text-right {
   text-align: right;
 }
@@ -49,7 +50,7 @@
   box-shadow: 10px 0 0 #fff, -10px 0 0 #fff;
 }
 .text-white {
-  color: #fff;
+  color: #fff !important;
 }
 .text-bright-gray {
   color: #3c3f55;
@@ -134,6 +135,9 @@
   }
   .mr-sm-auto {
     margin-right: auto;
+  }
+  .d-sm-none {
+    display: none;
   }
 }
 @include mobile {
