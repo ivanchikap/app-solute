@@ -1,3 +1,30 @@
 .testimonial {
 
+  &__carousel-wrapper {
+    width: 100%;
+    position: relative;
+    padding: 20px;
+  }
+
+  &__carousel {
+    border-radius: 15px;
+    width: 554px;
+    height: 237px;
+  }
+
+  &__carousel-item {
+    box-shadow: 4px 3px 0 rgba(131, 0, 255, 0.18);
+    background-color: #af5aff;
+    background-image: linear-gradient(to right, rgba(166, 85, 242, 0.87) 0%, rgba(166, 85, 242, 0.87) 20%, rgba(255, 85, 82, 0.87) 81%, rgba(255, 85, 82, 0.87) 100%);
+  }
+  .slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+  }
+  .slick-next {
+    right: 0;
+  }
+  .slick-prev {
+    left: 0;
+  }
 }
