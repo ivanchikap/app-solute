@@ -1,0 +1,51 @@
+.subscribe {
+  padding: 0 15px;
+  &__inner {
+    max-width: 1140px;
+    padding: 15px;
+    min-height: 190px;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.13);
+    border-radius: 15px 15px 0 0;
+    background-color: #ffffff;
+    margin: 0 auto;
+  }
+
+  &__title {
+    color: #af5aff;
+    font-size: 24px;
+    letter-spacing: 0.48px;
+    margin-right: 30px;
+
+    @include mobile-large {
+      margin-right: 0;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__input {
+    min-width: 369px;
+
+    @include tablet {
+      min-width: 287px;
+    }
+    @include mobile-large {
+      min-width: 280px;
+    }
+    @include mobile-large {
+      min-width: 265px;
+    }
+  }
+
+  &__button {
+    margin-left: 30px;
+
+    @include tablet {
+      margin-left: 12px;
+    }
+
+    @include mobile {
+      margin-left: 0;
+      margin-top: 12px;
+    }
+  }
+}

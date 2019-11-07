@@ -76,6 +76,19 @@
     vertical-align: middle;
   }
 }
+.subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+
+  @include mobile-large {
+    font-size: 17px;
+  }
+
+  @include mobile {
+    font-size: 16px;
+  }
+}
 
 .gradient-icon {
   width: 65px;
@@ -97,20 +110,18 @@
     width: 35px;
     height: 35px;
     border-radius: 5px;
-    line-height: 35px;
+    line-height: 31px;
     min-width: 35px;
     transition: all .2s ease-out;
-    border: 2px solid transparent;
+    border: 2px solid #af5aff;
     background-clip: padding-box;
     color: #fff;
+    cursor: pointer;
 
     &:hover {
-      width: 33px;
-      height: 33px;
       background-image: none;
       color: #af5aff;
       background-color: transparent;
-      border-color: #af5aff;
       box-shadow: none;
     }
   }
@@ -211,7 +222,6 @@
   color: #8f8f8f;
   letter-spacing: 0.8px;
   padding: 10px 0;
-  margin-bottom: 30px;
   font-family: 'Roboto', sans-serif;
 
   &:focus {
@@ -221,4 +231,14 @@
   &::-moz-placeholder          {color:#8f8f8f;}/* Firefox 19+ */
   &:-moz-placeholder           {color:#8f8f8f;}/* Firefox 18- */
   &:-ms-input-placeholder      {color:#8f8f8f;}
+
+  &--subscribe {
+    border-radius: 6px;
+    border: 1px solid #b0b0b0;
+    padding: 10px 20px;
+
+    @include mobile-large {
+      padding: 10px;
+    }
+  }
 }

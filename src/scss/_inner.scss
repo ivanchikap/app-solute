@@ -60,7 +60,7 @@
     }
     @include mobile {
       width: 100%;
-      padding: 15px 26px;
+      padding: 13px 26px;
     }
 
     &:hover {
@@ -87,6 +87,7 @@
 
   &__store-link-text {
     letter-spacing: 0.4px;
+    font-size: 16px;
   }
 
   &__store-link-name {

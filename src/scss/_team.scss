@@ -1,0 +1,59 @@
+.team {
+
+  &__cards {
+    margin-bottom: -40px;
+  }
+
+  &__card {
+    color: #3c3f55;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.13);
+    border-radius: 10px;
+    background-color: #ffffff;
+    height: 387px;
+
+    @include tablet {
+      margin-bottom: 40px;
+    }
+
+    .fab {
+      font-size: 15px;
+    }
+  }
+
+  &__card-img {
+    height: 262px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  &__card-person {
+    padding: 16px 12px 20px;
+  }
+
+  &__person-name {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 14px;
+    line-height: 1.7;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__person-position {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__card-links {
+    margin-bottom: 14px;
+  }
+
+  &__card-link {
+    transition: color .2s ease-out;
+    &:hover {
+      color: #f55769;
+    }
+  }
+}

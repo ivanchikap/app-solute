@@ -15,9 +15,15 @@
     font-weight: 500;
     letter-spacing: 0.48px;
 
-    @include tablet {
-      margin-top: 80px;
+    &--second {
+      @include tablet {
+        margin-top: 80px;
+      }
     }
+  }
+
+  &__form-element {
+    margin-bottom: 40px;
   }
 
   &__info {

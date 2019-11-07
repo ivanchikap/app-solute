@@ -11,6 +11,11 @@
     padding: 40px 0;
   }
 }
+.link-decor-on-hover {
+  &:hover {
+    text-decoration: underline;
+  }
+}
 .w-100 {
   width: 100% !important;
 }

@@ -1,0 +1,70 @@
+.template {
+
+  &__app-links {
+    margin-bottom: 74px;
+  }
+
+  &__store-link {
+    padding: 20px 34px;
+    background-color: #af5aff;
+    background-image: linear-gradient(to right, rgba(166, 85, 242, 0.87) 0%, rgba(166, 85, 242, 0.87) 20%, rgba(255, 85, 82, 0.87) 81%, rgba(255, 85, 82, 0.87) 100%);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0 rgba(131, 0, 255, 0.18);
+    background-clip: padding-box;
+    color: #fff;
+    transition: all .2s ease-out;
+
+    @include mobile-large {
+      width: 320px;
+    }
+
+    @include mobile {
+      width: 100%;
+      padding: 13px 26px;
+    }
+
+    &:hover {
+      background-image: none;
+      background-color: transparent;
+      border-color: #af5aff;
+      color: #3c3f55;
+      box-shadow: none;
+      .fab {
+        color: #af5aff;
+      }
+    }
+
+    & + & {
+      margin-left: 25px;
+
+      @include mobile-large {
+        margin-left: 0;
+        margin-top: 25px;
+      }
+    }
+    .fab {
+      margin-right: 13px;
+      font-size: 34px;
+    }
+  }
+
+  &__store-link-text {
+    font-size: 16px;
+    letter-spacing: 0.4px;
+  }
+
+  &__store-link-name {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    white-space: nowrap;
+  }
+
+  &__img {
+    max-width: 946px;
+    max-height: 340px;
+    margin: 0 auto;
+  }
+}

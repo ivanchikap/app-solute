@@ -5,6 +5,15 @@
       border-radius: 50%;
       box-shadow: 3px 3px 0 rgba(77, 25, 126, 0.18);
       color: #ffffff;
+      cursor: pointer;
+
+      @include mobile-large {
+        font-size: 55px;
+      }
+
+      @include  mobile {
+        font-size: 45px;
+      }
     }
   }
 }

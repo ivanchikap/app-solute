@@ -1,9 +1,21 @@
 .footer {
   height: 275px;
 
+  @include mobile-large {
+    height: 245px;
+  }
+
+  @include mobile {
+    height: 215px;
+  }
+
   &__info {
     color: #3c3f55;
     letter-spacing: 0.8px;
+  }
+
+  &__icons {
+    margin-bottom: 38px;
   }
 
   &__icon {

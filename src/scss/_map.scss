@@ -1,0 +1,14 @@
+.map {
+  height: 610px;
+
+  @include mobile-large {
+    height: 500px;
+  }
+
+  @include mobile {
+    height: 380px;
+  }
+}
+#map {
+  height: 100%;
+}
