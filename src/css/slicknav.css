@@ -64,8 +64,9 @@
   position: absolute;
   top: 100%;
   right: 0;
-  width: 30%;
-  background: #000;
+  width: 40%;
+  background: rgba(0, 0, 0, .7);
+  border-radius: 4px;
   text-align: left;
 }
   .slicknav_nav ul {

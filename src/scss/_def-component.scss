@@ -19,19 +19,49 @@
   letter-spacing: 0.35px;
 }
 
+
+
 .title > * {
   font-size: 35px;
   font-weight: 500;
+
+  @include mobile-large {
+    font-size: 32px;
+  }
+
+  @include mobile {
+    font-size: 30px;
+  }
 }
 
 .section-header {
   margin-bottom: 70px;
+
+  @include tablet {
+    margin-bottom: 60px;
+  }
+
+  @include mobile-large {
+    margin-bottom: 50px;
+  }
+
+  @include mobile {
+    margin-bottom: 40px;
+  }
+
 }
 
 .decoration {
   font-size: 18px;
   letter-spacing: 0.36px;
   margin: 21px 0;
+
+  @include mobile-large {
+    margin: 18px 0;
+  }
+  @include mobile {
+    margin: 16px 0;
+  }
 
   &::before, &::after {
     content: "---------------";
@@ -62,6 +92,28 @@
     line-height: 30px;
     min-width: 30px;
   }
+
+  &--little {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    line-height: 35px;
+    min-width: 35px;
+    transition: all .2s ease-out;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    color: #fff;
+
+    &:hover {
+      width: 33px;
+      height: 33px;
+      background-image: none;
+      color: #af5aff;
+      background-color: transparent;
+      border-color: #af5aff;
+      box-shadow: none;
+    }
+  }
 }
 
 .feature-text {
@@ -73,11 +125,18 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+
+    @include mobile-large {
+      margin: 21px 0 19px;
+    }
+
+    @include mobile {
+      margin: 19px 0 17px;
+    }
   }
 
   &__text {
-    font-size: 16px;
-    line-height: 26px;
+    line-height: 1.6;
     max-height: 104px;
     overflow: hidden;
   }
@@ -150,7 +209,6 @@
   width: 100%;
   border-bottom: 1px solid #b0b0b0;
   color: #8f8f8f;
-  font-size: 16px;
   letter-spacing: 0.8px;
   padding: 10px 0;
   margin-bottom: 30px;

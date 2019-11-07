@@ -1,0 +1,14 @@
+.footer {
+  height: 275px;
+
+  &__info {
+    color: #3c3f55;
+    letter-spacing: 0.8px;
+  }
+
+  &__icon {
+    & + & {
+      margin-left: 20px;
+    }
+  }
+}
