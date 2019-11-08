@@ -20,11 +20,30 @@
   .slick-prev, .slick-next {
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
+    width: 55px;
+    height: 55px;
+    box-shadow: 3px 3px 0 rgba(131, 0, 255, 0.18);
+    border-radius: 10px;
+    background-color: #f55668;
+    background-image: linear-gradient(to right, rgba(166, 85, 242, 0.87) 0%, rgba(166, 85, 242, 0.87) 20%, rgba(255, 85, 82, 0.87) 81%, rgba(255, 85, 82, 0.87) 100%);
+
+    .fas {
+      font-size: 24px;
+    }
   }
   .slick-next {
     right: 0;
+
+    .fas {
+      transform: rotate(90deg);
+    }
   }
   .slick-prev {
     left: 0;
+
+    .fas {
+      transform: rotate(-90deg);
+    }
   }
 }
