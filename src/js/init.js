@@ -27,7 +27,15 @@ $('.screenshots__carousel').slick({
 
 $('.testimonial__carousel').slick({
     slidesToShow: 1,
-    arrows: true
+    arrows: true,
+    responsive: [
+        {
+            breakpoint: 720,
+            settings: {
+                arrows: false
+            }
+        }
+    ]
 });
 
 //slicknav init
