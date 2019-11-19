@@ -1,6 +1,7 @@
 # [AppSolute](https://ivanchikap.github.io/app-solute/) landing page
 
 ---------------------
+This site layout is adaptive for all type of devices with screen width more then 319px.<br>
 
 ***
 Psd layout was get in web school.
